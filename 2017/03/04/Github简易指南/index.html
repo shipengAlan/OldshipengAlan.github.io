@@ -10,6 +10,11 @@
     <title>Github简易指南 | ShipengAlan&#39;s Blog</title>
     <meta name="author" content="Peng Shi">
     
+    <meta name="description" content="Git是代码版本管理的工具，配合远程代码仓库Github可以是实现合作开发。
+这里总结一下常用命令，方便依葫芦画瓢。
+Git常用指令1、初始化本地代码仓库1git init
+2、将修改加入到缓冲区*Git将代码分为当前代码、缓冲区和仓库123git add README.mdgit add test">
+    
     
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
@@ -234,12 +239,25 @@
 
 
             <div class="toc pink-link-context hide-on-med-and-down">
-    
+    <ol class="section table-of-contents"><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#Git常用指令"><span class="section table-of-contents-text">Git常用指令</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#Git分支操作"><span class="section table-of-contents-text">Git分支操作</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#Github远程仓库"><span class="section table-of-contents-text">Github远程仓库</span></a></li></ol>
 </div>
 
 
             <div class="entry pink-link-context">
-                
+                <p>Git是代码版本管理的工具，配合远程代码仓库Github可以是实现合作开发。</p>
+<p>这里总结一下常用命令，方便依葫芦画瓢。</p>
+<h3 id="Git常用指令"><a href="#Git常用指令" class="headerlink" title="Git常用指令"></a>Git常用指令</h3><p>1、初始化本地代码仓库<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git init</div></pre></td></tr></table></figure></p>
+<p>2、将修改加入到<strong>缓冲区</strong><br>*Git将代码分为当前代码、缓冲区和仓库<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">git add README.md</div><div class="line">git add <span class="built_in">test</span>/.</div><div class="line">git add .</div></pre></td></tr></table></figure></p>
+<p>3、将缓冲区的修改提交到仓库<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git commit -m <span class="string">"3/4/2017"</span></div></pre></td></tr></table></figure></p>
+<p>4、查看当前状态<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git status</div></pre></td></tr></table></figure></p>
+<p>结果返回当前的分支、未加入缓冲区的修改和未提交的缓冲区<br>5、查看当前代码与缓冲区、仓库的区别<br>查看当前代码与暂存区的差别<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git diff</div></pre></td></tr></table></figure></p>
+<p>查看当前代码和最新提交的差别<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git diff HEAD</div></pre></td></tr></table></figure></p>
+<p>6、查看提交历史记录<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git <span class="built_in">log</span></div><div class="line">git <span class="built_in">log</span> --pretty=short</div></pre></td></tr></table></figure></p>
+<p>7、回溯历史版本<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git reset --HEAD fd0cbf0d4a25f747230694d95cac1be72d33441d</div><div class="line">git reset --HEAD~3</div></pre></td></tr></table></figure></p>
+<p>哈希值表示仓库历史某一版本编号，通过<code>git log</code>指令可以查看<br>~3表示仓库历史的前3次提交，通过<code>git reflog</code>指令可以查看</p>
+<h3 id="Git分支操作"><a href="#Git分支操作" class="headerlink" title="Git分支操作"></a>Git分支操作</h3><p>未完待续</p>
+<h3 id="Github远程仓库"><a href="#Github远程仓库" class="headerlink" title="Github远程仓库"></a>Github远程仓库</h3><p>未完待续</p>
+
                 
 
 
